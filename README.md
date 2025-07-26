@@ -19,8 +19,8 @@
 - Java (Android Development)
 - XML (UI Layouts)
 - Android Studio
-- 🧩 **Third-party image enhancement library** (for sending/receiving image requests)
-
+- Glide — for efficient image loading and display
+- External API — for AI-powered image enhancement (e.g., restoration or colorization)
 ---
 
 ## 🚀 How It Works
