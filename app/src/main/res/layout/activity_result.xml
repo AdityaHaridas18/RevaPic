@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:background="@android:color/black"
+    tools:context=".ResultActivity">
+
+    <!-- Before Image -->
+    <ImageView
+        android:id="@+id/beforeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="Before Image" />
+
+    <!-- After Image (initially covering the before image) -->
+    <ImageView
+        android:id="@+id/afterImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="After Image" />
+
+    <!-- Slider View -->
+    <View
+        android:id="@+id/sliderView"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textSize="22dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+    <!-- Before Text -->
+    <TextView
+        android:id="@+id/beforeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Before"
+        android:fontFamily="@font/baloo_bhai"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="36dp" />
+
+    <!-- After Text -->
+    <TextView
+        android:id="@+id/afterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="After"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/baloo_bhai"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="130dp"
+        android:layout_marginTop="36dp" />
+
+    <!-- Center Circle with Arrows -->
+    <RelativeLayout
+        android:id="@+id/centerHandle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_handle_background"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/leftArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_left_arrow_white"
+            android:contentDescription="Left Arrow" />
+
+        <ImageView
+            android:id="@+id/rightArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_right_arrow_white"
+            android:layout_toEndOf="@id/leftArrow"
+            android:layout_marginStart="4dp"
+            android:contentDescription="Right Arrow" />
+    </RelativeLayout>
+
+</RelativeLayout> 

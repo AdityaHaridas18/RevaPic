@@ -1,0 +1,8 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridImageView"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:scaleType="centerCrop"
+    android:padding="1dp"
+    android:background="@android:color/darker_gray"
+    /> 

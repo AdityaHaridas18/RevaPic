@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_dialog_background"
+    android:gravity="center"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="20dp">
+
+    <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close_white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="Close Button"
+        android:background="@drawable/ic_arrow_forward_white" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dialogImageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_dialog_background"
+        android:src="@drawable/placeholder"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/enhanceButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialogImageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/baloo_bhai"
+        android:drawableEnd="@drawable/ic_arrow_forward_white"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:text="Enhance"
+        android:layout_marginTop="-30dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/removeAdsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enhanceButton"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@android:color/white"
+        android:drawableEnd="@drawable/pro_tag_red"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:text="Remove Ads &amp; Limits"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
